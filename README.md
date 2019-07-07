@@ -61,4 +61,4 @@ Documentation:
     
     mongo.removeRecord([table], [query])
             example:
-            mongo.updateRecords('players', { 'nickname': 'foobar'} }) 
+            mongo.removeRecord('players', { 'nickname': 'foobar'} }) 
