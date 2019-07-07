@@ -9,7 +9,7 @@ module.exports = function () {
     mongo = {
         settings: {
             url: 'mongodb://' + website.ipAddress + ':27017',
-            dbName: 'ligaosu',
+            dbName: 'database-name',
             client: {}, //temp connection, to make it global,
         },
         error: function(issuedThing){
@@ -172,6 +172,6 @@ module.exports = function () {
         }
     }
 
-    return mongo || 'Problem z kontrolerem MONGO';
+    return mongo || 'Problem with MONGODB Controller';
 
 }
